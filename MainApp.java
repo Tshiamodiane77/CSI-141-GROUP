@@ -3,7 +3,7 @@ public class MainApp
     public static void main(String[] args)
      {
         try {
-            // Create sample products
+            // Sample products
             Product[] products = new Product[5];
             products[0] = new Product("Flour", 150.00, 12);
             products[1] = new Product("Rice", 200.00, 10);
