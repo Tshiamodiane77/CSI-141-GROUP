@@ -1,7 +1,5 @@
-public class MainApp 
-{
-    public static void main(String[] args)
-     {
+public class MainApp {
+    public static void main(String[] args) {
         try {
             // Sample products
             Product[] products = new Product[5];
@@ -16,6 +14,14 @@ public class MainApp
 
             // Display customer information
             System.out.println("Customer: " + customer.getName() + ", Email: " + customer.getEmail());
+
+            // Display products before sorting
+            System.out.println("\nProducts before sorting:");
+            for (Product product : products) {
+                System.out.println(product.getName() + ": P" + product.getPrice());
+            }
+            //Sort products by price using Selection Sort
+            Sorter.selectionSort(products);
         }
     }
 }
