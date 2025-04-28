@@ -22,6 +22,12 @@ public class MainApp {
             }
             //Sort products by price using Selection Sort
             Sorter.selectionSort(products);
+
+            // Display products after sorting
+            System.out.println("\nProducts after sorting by price (Selection Sort):");
+            for (Product product : products) {
+                System.out.println(product.getName() + ": P" + product.getPrice());
+            }
         }
     }
 }
