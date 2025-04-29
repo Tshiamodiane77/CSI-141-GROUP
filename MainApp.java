@@ -28,6 +28,15 @@ public class MainApp {
             for (Product product : products) {
                 System.out.println(product.getName() + ": P" + product.getPrice());
             }
+           // Perform a binary search(after sorting)
+            double searchPrice = 200.00;
+            index = Search.binarySearch(products, searchPrice);
+            if(index != -1) {
+                System.out.println("Found product with price P" + searchPrice + " at index: " + index);
+            } else {
+                System.out.println("Product with price P" + searchPrice + " not found.");
+            }
         }
     }
-}
+                
+                
