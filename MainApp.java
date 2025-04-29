@@ -28,6 +28,15 @@ public class MainApp {
             for (Product product : products) {
                 System.out.println(product.getName() + ": P" + product.getPrice());
             }
+             // Perform a linear search
+            String searchName = "Maizemeal";
+            int index = Search.linearSearch(products, searchName);
+            if (index != -1) {
+                System.out.println("\nFound " + searchName + " at index: " + index);
+            } else {
+                System.out.println("\n" + searchName + " not found.");
+            }
+            
            // Perform a binary search(after sorting)
             double searchPrice = 200.00;
             index = Search.binarySearch(products, searchPrice);
@@ -36,6 +45,7 @@ public class MainApp {
             } else {
                 System.out.println("Product with price P" + searchPrice + " not found.");
             }
+            
         }
     }
                 
