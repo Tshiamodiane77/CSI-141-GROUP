@@ -45,7 +45,9 @@ public class MainApp {
             } else {
                 System.out.println("Product with price P" + searchPrice + " not found.");
             }
-            
+        }catch(InvalidPriceException e) {
+            System.out.printIn("Error: " + e.getMessage());
+            }
         }
     }
                 
